@@ -1,0 +1,121 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 1671
+'[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] ===================================\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] === History of inputs to 3dcalc ===\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] === Input a:\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] [kirwan@a-kirwanb.local: Wed Jun 14 12:13:24 2017] 3dcopy /Volumes/Yorick/Templates/vold2_mni/priors_JLF/label_1010.nii.gz ./lRetrosplenial+tlrc\n[kirwan@a-kirwanb.local: Wed Jun 14 12:13:59 2017] 3dcalc -a lRetrosplenial+tlrc. -prefix lRetrosplenial_thresholded -datum short -expr 'step(a-.7)'\n[kirwan@a-kirwanb.local: Wed Jun 14 12:14:37 2017] 3dfractionize -template s2975/RestingState_volreg_ANTS_resampled+tlrc. -preserve -prefix lRetrosplenial_resampled -input lRetrosplenial_thresholded+tlrc.\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] === Input b:\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] [kirwan@a-kirwanb.local: Wed Jun 14 12:14:48 2017] 3dcopy /Volumes/Yorick/Templates/vold2_mni/priors_JLF/label_2010.nii.gz ./rRetrosplenial+tlrc\n[kirwan@a-kirwanb.local: Wed Jun 14 12:15:06 2017] 3dcalc -a rRetrosplenial+tlrc. -prefix rRetrosplenial_thresholded -datum short -expr 'step(a-.7)'\n[kirwan@a-kirwanb.local: Wed Jun 14 12:15:26 2017] 3dfractionize -template s2975/RestingState_volreg_ANTS_resampled+tlrc. -preserve -prefix rRetrosplenial_resampled -input rRetrosplenial_thresholded+tlrc.\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] ===================================\n[kirwan@a-kirwanb.local: Wed Jun 14 13:26:01 2017] 3dcalc -a lRetrosplenial_resampled+tlrc. -b rRetrosplenial_resampled+tlrc. -prefix retrosplenial_mask -expr 'step(a+b)'~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_FUNC~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_NUpG8tdb5xZKvgXygJ4P0g~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Wed Jun 14 13:26:01 2017~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 0 1 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+           95.4          131.4          -77.4
+
+type  = float-attribute
+name  = DELTA
+count = 3
+           -1.8           -1.8            1.8
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+           -1.8              0              0           95.4              0
+           -1.8              0          131.4              0              0
+            1.8          -77.4
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+           -1.8              0              0           95.4              0
+           -1.8              0          131.4              0              0
+            1.8          -77.4
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0              1
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 107 127 107 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
